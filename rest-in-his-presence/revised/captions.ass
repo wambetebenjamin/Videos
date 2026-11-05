@@ -1,0 +1,69 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+ScaledBorderAndShadow: yes
+WrapStyle: 2
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Verse,Lato,54,&H00FFFFFF,&H000000FF,&H00101010,&H66000000,0,0,0,0,100,100,0,0,1,3,1,2,120,120,152,1
+Style: Title,Lato,68,&H00FFFFFF,&H000000FF,&H00101010,&H66000000,1,0,0,0,100,100,0,0,1,3,1,2,120,120,200,1
+Style: End,Lato,50,&H00FFFFFF,&H000000FF,&H00101010,&H66000000,0,0,0,0,100,100,0,0,1,3,1,2,120,120,190,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:09.50,Title,,0,0,0,,{\fad(800,800)}REST IN HIS PRESENCE\N{\fs32}ABBA’S TABLE
+Dialogue: 0,0:00:10.00,0:00:30.00,Verse,,0,0,0,,{\fad(350,350)}“The LORD is my shepherd; I shall not want.”\N{\fs34}Psalm 23:1
+Dialogue: 0,0:00:30.00,0:00:50.00,Verse,,0,0,0,,{\fad(350,350)}“He maketh me to lie down in green pastures: He leadeth\Nme beside the still waters.”\N{\fs34}Psalm 23:2
+Dialogue: 0,0:00:50.00,0:01:10.00,Verse,,0,0,0,,{\fad(350,350)}“He restoreth my soul: He leadeth me in the paths of\Nrighteousness for His name’s sake.”\N{\fs34}Psalm 23:3
+Dialogue: 0,0:01:10.00,0:01:30.00,Verse,,0,0,0,,{\fad(350,350)}“Yea, though I walk through the valley of the shadow of\Ndeath, I will fear no evil: for Thou art with me; Thy rod and\NThy staff they comfort me.”\N{\fs34}Psalm 23:4
+Dialogue: 0,0:01:30.00,0:01:50.00,Verse,,0,0,0,,{\fad(350,350)}“Thou preparest a table before me in the presence of mine\Nenemies: Thou anointest my head with oil; my cup runneth\Nover.”\N{\fs34}Psalm 23:5
+Dialogue: 0,0:01:50.00,0:02:10.00,Verse,,0,0,0,,{\fad(350,350)}“Surely goodness and mercy shall follow me all the days of\Nmy life: and I will dwell in the house of the LORD for\Never.”\N{\fs34}Psalm 23:6
+Dialogue: 0,0:02:10.00,0:02:30.00,Verse,,0,0,0,,{\fad(350,350)}“The LORD is my light and my salvation; whom shall I\Nfear? the LORD is the strength of my life; of whom shall I\Nbe afraid?”\N{\fs34}Psalm 27:1
+Dialogue: 0,0:02:30.00,0:02:50.00,Verse,,0,0,0,,{\fad(350,350)}“Wait on the LORD: be of good courage, and He shall\Nstrengthen thine heart: wait, I say, on the LORD.”\N{\fs34}Psalm 27:14
+Dialogue: 0,0:02:50.00,0:03:10.00,Verse,,0,0,0,,{\fad(350,350)}“I sought the LORD, and He heard me, and delivered me\Nfrom all my fears.”\N{\fs34}Psalm 34:4
+Dialogue: 0,0:03:10.00,0:03:30.00,Verse,,0,0,0,,{\fad(350,350)}“O taste and see that the LORD is good: blessed is the\Nman that trusteth in Him.”\N{\fs34}Psalm 34:8
+Dialogue: 0,0:03:30.00,0:03:50.00,Verse,,0,0,0,,{\fad(350,350)}“The righteous cry, and the LORD heareth, and delivereth\Nthem out of all their troubles.”\N{\fs34}Psalm 34:17
+Dialogue: 0,0:03:50.00,0:04:10.00,Verse,,0,0,0,,{\fad(350,350)}“The LORD is nigh unto them that are of a broken heart;\Nand saveth such as be of a contrite spirit.”\N{\fs34}Psalm 34:18
+Dialogue: 0,0:04:10.00,0:04:30.00,Verse,,0,0,0,,{\fad(350,350)}“Delight thyself also in the LORD; and He shall give thee\Nthe desires of thine heart.”\N{\fs34}Psalm 37:4
+Dialogue: 0,0:04:30.00,0:04:50.00,Verse,,0,0,0,,{\fad(350,350)}“Commit thy way unto the LORD; trust also in Him; and\NHe shall bring it to pass.”\N{\fs34}Psalm 37:5
+Dialogue: 0,0:04:50.00,0:05:10.00,Verse,,0,0,0,,{\fad(350,350)}“Rest in the LORD, and wait patiently for Him: fret not\Nthyself because of him who prospereth in his way,\Nbecause of the man who bringeth wicked devices to pass.”\N{\fs34}Psalm 37:7
+Dialogue: 0,0:05:10.00,0:05:30.00,Verse,,0,0,0,,{\fad(350,350)}“God is our refuge and strength, a very present help in\Ntrouble.”\N{\fs34}Psalm 46:1
+Dialogue: 0,0:05:30.00,0:05:50.00,Verse,,0,0,0,,{\fad(350,350)}“Be still, and know that I am God: I will be exalted among\Nthe heathen, I will be exalted in the earth.”\N{\fs34}Psalm 46:10
+Dialogue: 0,0:05:50.00,0:06:10.00,Verse,,0,0,0,,{\fad(350,350)}“Cast thy burden upon the LORD, and He shall sustain\Nthee: He shall never suffer the righteous to be moved.”\N{\fs34}Psalm 55:22
+Dialogue: 0,0:06:10.00,0:06:30.00,Verse,,0,0,0,,{\fad(350,350)}“What time I am afraid, I will trust in Thee.”\N{\fs34}Psalm 56:3
+Dialogue: 0,0:06:30.00,0:06:50.00,Verse,,0,0,0,,{\fad(350,350)}“From the end of the earth will I cry unto Thee, when my\Nheart is overwhelmed: lead me to the rock that is higher\Nthan I.”\N{\fs34}Psalm 61:2
+Dialogue: 0,0:06:50.00,0:07:10.00,Verse,,0,0,0,,{\fad(350,350)}“Truly my soul waiteth upon God: from Him cometh my\Nsalvation.”\N{\fs34}Psalm 62:1
+Dialogue: 0,0:07:10.00,0:07:30.00,Verse,,0,0,0,,{\fad(350,350)}“My soul, wait thou only upon God; for my expectation is\Nfrom Him.”\N{\fs34}Psalm 62:5
+Dialogue: 0,0:07:30.00,0:07:50.00,Verse,,0,0,0,,{\fad(350,350)}“He only is my rock and my salvation: He is my defence; I\Nshall not be moved.”\N{\fs34}Psalm 62:6
+Dialogue: 0,0:07:50.00,0:08:10.00,Verse,,0,0,0,,{\fad(350,350)}“O God, Thou art my God; early will I seek Thee: my soul\Nthirsteth for Thee, my flesh longeth for Thee in a dry and\Nthirsty land, where no water is;”\N{\fs34}Psalm 63:1
+Dialogue: 0,0:08:10.00,0:08:30.00,Verse,,0,0,0,,{\fad(350,350)}“He that dwelleth in the secret place of the most High\Nshall abide under the shadow of the Almighty.”\N{\fs34}Psalm 91:1
+Dialogue: 0,0:08:30.00,0:08:50.00,Verse,,0,0,0,,{\fad(350,350)}“I will say of the LORD, He is my refuge and my fortress:\Nmy God; in Him will I trust.”\N{\fs34}Psalm 91:2
+Dialogue: 0,0:08:50.00,0:09:10.00,Verse,,0,0,0,,{\fad(350,350)}“He shall cover thee with His feathers, and under His\Nwings shalt thou trust: His truth shall be thy shield and\Nbuckler.”\N{\fs34}Psalm 91:4
+Dialogue: 0,0:09:10.00,0:09:30.00,Verse,,0,0,0,,{\fad(350,350)}“For He shall give His angels charge over thee, to keep\Nthee in all thy ways.”\N{\fs34}Psalm 91:11
+Dialogue: 0,0:09:30.00,0:09:50.00,Verse,,0,0,0,,{\fad(350,350)}“Enter into His gates with thanksgiving, and into His courts\Nwith praise: be thankful unto Him, and bless His name.”\N{\fs34}Psalm 100:4
+Dialogue: 0,0:09:50.00,0:10:10.00,Verse,,0,0,0,,{\fad(350,350)}“Bless the LORD, O my soul: and all that is within me,\Nbless His holy name.”\N{\fs34}Psalm 103:1
+Dialogue: 0,0:10:10.00,0:10:30.00,Verse,,0,0,0,,{\fad(350,350)}“Bless the LORD, O my soul, and forget not all His\Nbenefits:”\N{\fs34}Psalm 103:2
+Dialogue: 0,0:10:30.00,0:10:50.00,Verse,,0,0,0,,{\fad(350,350)}“The LORD is merciful and gracious, slow to anger, and\Nplenteous in mercy.”\N{\fs34}Psalm 103:8
+Dialogue: 0,0:10:50.00,0:11:10.00,Verse,,0,0,0,,{\fad(350,350)}“O give thanks unto the LORD, for He is good: for His\Nmercy endureth for ever.”\N{\fs34}Psalm 107:1
+Dialogue: 0,0:11:10.00,0:11:30.00,Verse,,0,0,0,,{\fad(350,350)}“This is the day which the LORD hath made; we will\Nrejoice and be glad in it.”\N{\fs34}Psalm 118:24
+Dialogue: 0,0:11:30.00,0:11:50.00,Verse,,0,0,0,,{\fad(350,350)}“Thy word is a lamp unto my feet, and a light unto my\Npath.”\N{\fs34}Psalm 119:105
+Dialogue: 0,0:11:50.00,0:12:10.00,Verse,,0,0,0,,{\fad(350,350)}“I will lift up mine eyes unto the hills, from whence cometh\Nmy help.”\N{\fs34}Psalm 121:1
+Dialogue: 0,0:12:10.00,0:12:30.00,Verse,,0,0,0,,{\fad(350,350)}“My help cometh from the LORD, which made heaven and\Nearth.”\N{\fs34}Psalm 121:2
+Dialogue: 0,0:12:30.00,0:12:50.00,Verse,,0,0,0,,{\fad(350,350)}“The LORD shall preserve thee from all evil: He shall\Npreserve thy soul.”\N{\fs34}Psalm 121:7
+Dialogue: 0,0:12:50.00,0:13:10.00,Verse,,0,0,0,,{\fad(350,350)}“The LORD shall preserve thy going out and thy coming in\Nfrom this time forth, and even for evermore.”\N{\fs34}Psalm 121:8
+Dialogue: 0,0:13:10.00,0:13:30.00,Verse,,0,0,0,,{\fad(350,350)}“I will praise Thee; for I am fearfully and wonderfully\Nmade: marvellous are Thy works; and that my soul\Nknoweth right well.”\N{\fs34}Psalm 139:14
+Dialogue: 0,0:13:30.00,0:13:50.00,Verse,,0,0,0,,{\fad(350,350)}“Cause me to hear Thy lovingkindness in the morning; for\Nin Thee do I trust: cause me to know the way wherein I\Nshould walk; for I lift up my soul unto Thee.”\N{\fs34}Psalm 143:8
+Dialogue: 0,0:13:50.00,0:14:10.00,Verse,,0,0,0,,{\fad(350,350)}“The LORD is good to all: and His tender mercies are over\Nall His works.”\N{\fs34}Psalm 145:9
+Dialogue: 0,0:14:10.00,0:14:30.00,Verse,,0,0,0,,{\fad(350,350)}“The LORD is nigh unto all them that call upon Him, to all\Nthat call upon Him in truth.”\N{\fs34}Psalm 145:18
+Dialogue: 0,0:14:30.00,0:14:50.00,Verse,,0,0,0,,{\fad(350,350)}“He healeth the broken in heart, and bindeth up their\Nwounds.”\N{\fs34}Psalm 147:3
+Dialogue: 0,0:14:50.00,0:15:10.00,Verse,,0,0,0,,{\fad(350,350)}“Trust in the LORD with all thine heart; and lean not unto\Nthine own understanding.”\N{\fs34}Proverbs 3:5
+Dialogue: 0,0:15:10.00,0:15:30.00,Verse,,0,0,0,,{\fad(350,350)}“In all thy ways acknowledge Him, and He shall direct thy\Npaths.”\N{\fs34}Proverbs 3:6
+Dialogue: 0,0:15:30.00,0:15:50.00,Verse,,0,0,0,,{\fad(350,350)}“Thou wilt keep him in perfect peace, whose mind is\Nstayed on Thee: because he trusteth in Thee.”\N{\fs34}Isaiah 26:3
+Dialogue: 0,0:15:50.00,0:16:10.00,Verse,,0,0,0,,{\fad(350,350)}“He giveth power to the faint; and to them that have no\Nmight He increaseth strength.”\N{\fs34}Isaiah 40:29
+Dialogue: 0,0:16:10.00,0:16:30.00,Verse,,0,0,0,,{\fad(350,350)}“But they that wait upon the LORD shall renew their\Nstrength; they shall mount up with wings as eagles; they\Nshall run, and not be weary; and they shall walk, and not\Nfaint.”\N{\fs34}Isaiah 40:31
+Dialogue: 0,0:16:30.00,0:16:50.00,Verse,,0,0,0,,{\fad(350,350)}“Fear thou not; for I am with thee: be not dismayed; for I\Nam thy God: I will strengthen thee; yea, I will help thee;\Nyea, I will uphold thee with the right hand of my\Nrighteousness.”\N{\fs34}Isaiah 41:10
+Dialogue: 0,0:16:50.00,0:17:10.00,Verse,,0,0,0,,{\fad(350,350)}“When thou passest through the waters, I will be with\Nthee; and through the rivers, they shall not overflow thee:\Nwhen thou walkest through the fire, thou shalt not be\Nburned; neither shall the flame kindle upon thee.”\N{\fs34}Isaiah 43:2
+Dialogue: 0,0:17:10.00,0:17:30.00,Verse,,0,0,0,,{\fad(350,350)}“For ye shall go out with joy, and be led forth with peace:\Nthe mountains and the hills shall break forth before you\Ninto singing, and all the trees of the field shall clap their\Nhands.”\N{\fs34}Isaiah 55:12
+Dialogue: 0,0:17:30.00,0:17:46.35,End,,0,0,0,,{\fad(900,900)}Thank you for spending this time with us\N{\fs32}ABBA’S TABLE
