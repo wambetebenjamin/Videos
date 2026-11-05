@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Download Rest in His Presence</title>
+<style>body{font:17px/1.6 system-ui,sans-serif;background:#f4f7f4;color:#17241c;margin:0;padding:24px}main{max-width:580px;margin:8vh auto;background:white;padding:32px;border-radius:16px;box-shadow:0 8px 30px #142b1b12}h1{line-height:1.2}button{background:#28543b;color:white;border:0;border-radius:8px;font-size:17px;padding:14px 20px;cursor:pointer}button:disabled{opacity:.55}progress{width:100%;height:14px;margin-top:24px}small{color:#4a5b50}</style></head>
+<body><main><h1>Rest in His Presence — Large Text</h1><p>Download the complete Full HD video with larger Scripture text as one MP4 file. The video is approximately 17 minutes 46 seconds and requires about 715 MB of download data.</p><button id="download">Download the video</button><progress id="progress" max="749028118" value="0"></progress><p id="status" role="status">Ready to download.</p><small>Keep this page open until the download finishes. On some phones, a computer may work better because the video is large.</small></main>
+<script>
+const base='https://raw.githubusercontent.com/wambetebenjamin/Videos/refs/heads/arena/5f42c165-videos/rest-in-his-presence/large-text/chunks/';
+const parts=[
+[94371840,'46a104ef5b66da8e87219919a7bddf53de6e79153112008ded25cf264e1a9c0a'],
+[94371840,'e49c6e9b981b4158ac9ce7aecb13d200746e814c7ae04bc2f977e1402ec6c763'],
+[94371840,'5542ee37853373a6984cc74f121f2048ec78cebb22e068e74ee8d32a2293f663'],
+[94371840,'dff2b914a69e015357df75ba91360e2cf69efbb3388ce490d83216eacbfb6bec'],
+[94371840,'2686f166f7ff75f7e9b497cdeece56ac3e9cd57069579db34e11bec936c3b8cb'],
+[94371840,'189610ca1f19615567d04cfc9e88016d66be88b88d1eb837a56724b49f221177'],
+[94371840,'00acc4ef19887d0310dfc67c67ec7e5a3a084776360197e76f92cc601b661571'],
+[88425238,'d51663887be48ca435d8d0350f86b586e688913ce81bdc3844792d6ce2d1d2f9']];
+const btn=document.getElementById('download'), status=document.getElementById('status'), progress=document.getElementById('progress');
+btn.onclick=async()=>{
+  let writer, blobs=[], done=0;
+  btn.disabled=true; progress.value=0;
+  try{
+    if(window.showSaveFilePicker){
+      const handle=await window.showSaveFilePicker({suggestedName:'Rest_in_His_Presence_Large_Text.mp4',types:[{description:'MP4 video',accept:{'video/mp4':['.mp4']}}]});
+      writer=await handle.createWritable();
+    }
+    if(!crypto.subtle) throw new Error('This browser cannot verify downloads. Please try Chrome or Edge.');
+    for(let i=0;i<parts.length;i++){
+      const [size,expected]=parts[i];
+      status.textContent=`Downloading section ${i+1} of ${parts.length}…`;
+      const response=await fetch(base+'video-'+String(i).padStart(2,'0')+'.bin');
+      if(!response.ok||!response.body) throw new Error('Could not download section '+(i+1)+' (HTTP '+response.status+').');
+      const reader=response.body.getReader(), data=new Uint8Array(size); let pos=0;
+      while(true){let {done:end,value}=await reader.read(); if(end) break; if(pos+value.length>size) throw new Error('Unexpected data size.'); data.set(value,pos);pos+=value.length; progress.value=done+pos;}
+      if(pos!==size) throw new Error('The connection ended before section '+(i+1)+' was complete.');
+      const digest=Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',data))).map(n=>n.toString(16).padStart(2,'0')).join('');
+      if(digest!==expected) throw new Error('Verification failed for section '+(i+1)+'. Please try again.');
+      if(writer) await writer.write(data); else blobs.push(data);
+      done+=size;
+    }
+    if(writer) await writer.close();
+    else {const url=URL.createObjectURL(new Blob(blobs,{type:'video/mp4'}));const a=document.createElement('a');a.href=url;a.download='Rest_in_His_Presence_Large_Text.mp4';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),60000);}
+    status.textContent='Finished! Your complete video has been saved.';
+  }catch(error){if(writer)try{await writer.abort()}catch(_){};status.textContent=error.name==='AbortError'?'Save cancelled.':`Download stopped: ${error.message}`;}
+  finally{btn.disabled=false;}
+};
+</script></body></html>
