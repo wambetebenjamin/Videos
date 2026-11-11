@@ -1,35 +1,35 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Download the Israel journey</title>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Download A Journey of Faith</title>
 <style>body{font:17px/1.6 system-ui,sans-serif;background:#f4f7f4;color:#17241c;margin:0;padding:24px}main{max-width:580px;margin:8vh auto;background:white;padding:32px;border-radius:16px;box-shadow:0 8px 30px #142b1b12}h1{line-height:1.2}button{background:#28543b;color:white;border:0;border-radius:8px;font-size:17px;padding:14px 20px;cursor:pointer}button:disabled{opacity:.55}progress{width:100%;height:14px;margin-top:24px}small{color:#4a5b50}</style></head>
-<body><main><h1>A Journey of Faith through Israel</h1><p>Download the complete Full HD video as one MP4 file. The video is approximately 19 minutes 12 seconds and requires about 929 MB of download data.</p><button id="download">Download the video</button><progress id="progress" max="974464266" value="0"></progress><p id="status" role="status">Ready to download.</p><small>Keep this page open until the download finishes. On some phones, a computer may work better because the video is large.</small></main>
+<body><main><h1>A Journey of Faith</h1><p>Download the complete Full HD video as one MP4 file. The video is approximately 19 minutes 12 seconds and requires about 925 MB of download data.</p><button id="download">Download the video</button><progress id="progress" max="969592906" value="0"></progress><p id="status" role="status">Ready to download.</p><small>Keep this page open until the download finishes. On some phones, a computer may work better because the video is large.</small></main>
 <script>
-const base='https://raw.githubusercontent.com/wambetebenjamin/Videos/refs/heads/arena/5f42c165-videos/journey-through-israel/chunks/';
+const base='https://raw.githubusercontent.com/wambetebenjamin/Videos/refs/heads/arena/5f42c165-videos/A_Journey_of_Faith/chunks/';
 const parts=[
-[94371840,'0c44b433894c3825c476fdec255cfbc96af9bf2badf619c0fa40e00045e7078e'],
-[94371840,'58fdd222d8dc231496f1cfa41bfdd2d38b3b3d266924dc0998e371d223fcb1d0'],
-[94371840,'203267b75dfe43261c31d349ddb70519023501911ff8f6f12dc7c7a7d048931c'],
-[94371840,'fa9f76a26b586cfdff934f593d33f8fdf19dd5cbfc10d9a0a9beb7be2ee26a12'],
-[94371840,'d3065c729b718c5ff44f0fc460f391ff1861aec27c694856c9c1c0e3a5ecd084'],
-[94371840,'dd9ca1cf07323927c0b8b3e0cdaea1a32a2a1e7c36cbf215d298867bb14f0066'],
-[94371840,'2a8ab9776fb4b772c390319e0343df4b6bc1a1d5b945508d837a74ee4f26c2ae'],
-[94371840,'e3d7c1966c7ec62ba87f0f0f679a6c7b10cef3e3bb5177e32e177d3df3e35dce'],
-[94371840,'becc0d19ab426d921bf92846525e8fa993a5eee3cc8aebff04910933253ef6bb'],
-[94371840,'da433c0bde7e150813546053429934433983799fbfe0b4b05b147852a896019c'],
-[30745866,'b5c7f2e39f5b0884d0b6d2f52f315f97e6ad417faebe014b26f0b02c001dbc3f']];
+[94371840,'fcac82ee5b75ea0b4393d3fed47503eaeea283668e2f617207ced34686332b4a'],
+[94371840,'25d5a32c7c285d1ad8cc138a2c67166c4246162d517a48da781c74dd7746acea'],
+[94371840,'ee6e5557f59c564ffa2b75eb6db7d2df3e02afe1555389eff9f7ffbe99359c0b'],
+[94371840,'3c87f4649b07cbb1111ee62aa4655b232c6daf456dce363fbd159f22140ab437'],
+[94371840,'14e4def0288c1c236b46dbc43f5bb8b73c29f502a7af94c6581666945727701e'],
+[94371840,'8c873e48171de3947a60a9666d8c9ddcb039c8f76bc26470d35f11b4abb66716'],
+[94371840,'15b4461750c9f3d49928f4e3c52e671747588203d68714f6efba6143e4a851fe'],
+[94371840,'f039592a7f7f8231c0aa58ba034a6a55a54607de39d6d69c71787ed04be7d5ae'],
+[94371840,'00bb65404b40cac95a9181e2b3c8e8731dfafba7f9ebac2626f5a06b5489d6c1'],
+[94371840,'06278a955276240e2e4614d5bc6cb290513308be3442b237455be89fd6245df4'],
+[25874506,'9a8e99d172c511700c581eac5fbdc15fd2d19a8036f87d65a75521805efb1c7f']];
 const btn=document.getElementById('download'), status=document.getElementById('status'), progress=document.getElementById('progress');
 btn.onclick=async()=>{
   let writer, blobs=[], done=0;
   btn.disabled=true; progress.value=0;
   try{
     if(window.showSaveFilePicker){
-      const handle=await window.showSaveFilePicker({suggestedName:'Journey_Through_Israel.mp4',types:[{description:'MP4 video',accept:{'video/mp4':['.mp4']}}]});
+      const handle=await window.showSaveFilePicker({suggestedName:'A_Journey_of_Faith.mp4',types:[{description:'MP4 video',accept:{'video/mp4':['.mp4']}}]});
       writer=await handle.createWritable();
     }
     if(!crypto.subtle) throw new Error('This browser cannot verify downloads. Please try Chrome or Edge.');
     for(let i=0;i<parts.length;i++){
       const [size,expected]=parts[i];
       status.textContent=`Downloading section ${i+1} of ${parts.length}…`;
-      const response=await fetch(base+'video-'+String(i).padStart(2,'0')+'.bin');
+      const response=await fetch(base+'part'+String(i).padStart(2,'0')+'.bin');
       if(!response.ok||!response.body) throw new Error('Could not download section '+(i+1)+' (HTTP '+response.status+').');
       const reader=response.body.getReader(), data=new Uint8Array(size); let pos=0;
       while(true){let {done:end,value}=await reader.read(); if(end) break; if(pos+value.length>size) throw new Error('Unexpected data size.'); data.set(value,pos);pos+=value.length; progress.value=done+pos;}
@@ -40,7 +40,7 @@ btn.onclick=async()=>{
       done+=size;
     }
     if(writer) await writer.close();
-    else {const url=URL.createObjectURL(new Blob(blobs,{type:'video/mp4'}));const a=document.createElement('a');a.href=url;a.download='Journey_Through_Israel.mp4';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),60000);}
+    else {const url=URL.createObjectURL(new Blob(blobs,{type:'video/mp4'}));const a=document.createElement('a');a.href=url;a.download='A_Journey_of_Faith.mp4';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),60000);}
     status.textContent='Finished! Your complete video has been saved.';
   }catch(error){if(writer)try{await writer.abort()}catch(_){};status.textContent=error.name==='AbortError'?'Save cancelled.':`Download stopped: ${error.message}`;}
   finally{btn.disabled=false;}

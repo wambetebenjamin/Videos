@@ -6,22 +6,22 @@ import sys
 import urllib.request
 from pathlib import Path
 
-BASE = 'https://raw.githubusercontent.com/wambetebenjamin/Videos/refs/heads/arena/5f42c165-videos/journey-through-israel/chunks/'
+BASE = 'https://raw.githubusercontent.com/wambetebenjamin/Videos/refs/heads/arena/5f42c165-videos/A_Journey_of_Faith/chunks/'
 CHUNKS = [
-    (94371840, '0c44b433894c3825c476fdec255cfbc96af9bf2badf619c0fa40e00045e7078e'),
-    (94371840, '58fdd222d8dc231496f1cfa41bfdd2d38b3b3d266924dc0998e371d223fcb1d0'),
-    (94371840, '203267b75dfe43261c31d349ddb70519023501911ff8f6f12dc7c7a7d048931c'),
-    (94371840, 'fa9f76a26b586cfdff934f593d33f8fdf19dd5cbfc10d9a0a9beb7be2ee26a12'),
-    (94371840, 'd3065c729b718c5ff44f0fc460f391ff1861aec27c694856c9c1c0e3a5ecd084'),
-    (94371840, 'dd9ca1cf07323927c0b8b3e0cdaea1a32a2a1e7c36cbf215d298867bb14f0066'),
-    (94371840, '2a8ab9776fb4b772c390319e0343df4b6bc1a1d5b945508d837a74ee4f26c2ae'),
-    (94371840, 'e3d7c1966c7ec62ba87f0f0f679a6c7b10cef3e3bb5177e32e177d3df3e35dce'),
-    (94371840, 'becc0d19ab426d921bf92846525e8fa993a5eee3cc8aebff04910933253ef6bb'),
-    (94371840, 'da433c0bde7e150813546053429934433983799fbfe0b4b05b147852a896019c'),
-    (30745866, 'b5c7f2e39f5b0884d0b6d2f52f315f97e6ad417faebe014b26f0b02c001dbc3f'),
+    (94371840, 'fcac82ee5b75ea0b4393d3fed47503eaeea283668e2f617207ced34686332b4a'),
+    (94371840, '25d5a32c7c285d1ad8cc138a2c67166c4246162d517a48da781c74dd7746acea'),
+    (94371840, 'ee6e5557f59c564ffa2b75eb6db7d2df3e02afe1555389eff9f7ffbe99359c0b'),
+    (94371840, '3c87f4649b07cbb1111ee62aa4655b232c6daf456dce363fbd159f22140ab437'),
+    (94371840, '14e4def0288c1c236b46dbc43f5bb8b73c29f502a7af94c6581666945727701e'),
+    (94371840, '8c873e48171de3947a60a9666d8c9ddcb039c8f76bc26470d35f11b4abb66716'),
+    (94371840, '15b4461750c9f3d49928f4e3c52e671747588203d68714f6efba6143e4a851fe'),
+    (94371840, 'f039592a7f7f8231c0aa58ba034a6a55a54607de39d6d69c71787ed04be7d5ae'),
+    (94371840, '00bb65404b40cac95a9181e2b3c8e8731dfafba7f9ebac2626f5a06b5489d6c1'),
+    (94371840, '06278a955276240e2e4614d5bc6cb290513308be3442b237455be89fd6245df4'),
+    (25874506, '9a8e99d172c511700c581eac5fbdc15fd2d19a8036f87d65a75521805efb1c7f'),
 ]
-TOTAL_HASH = 'db3d6b8b93a423ec7c89ecb2b5ef2bf493b238f975732508d53ab22bff32d820'
-OUTPUT = Path('Journey_Through_Israel.mp4')
+TOTAL_HASH = 'e28d64890fc87a878dd94bcbd728976b0d23708515c96da4496032ee67b67b29'
+OUTPUT = Path('A_Journey_of_Faith.mp4')
 TEMP = OUTPUT.with_suffix('.mp4.part')
 
 def main():
@@ -33,7 +33,7 @@ def main():
             for i, (size, expected) in enumerate(CHUNKS):
                 print(f'Downloading section {i + 1} of {len(CHUNKS)}...', flush=True)
                 digest, count = hashlib.sha256(), 0
-                with urllib.request.urlopen(BASE + f'video-{i:02}.bin', timeout=90) as response:
+                with urllib.request.urlopen(BASE + f'part{i:02}.bin', timeout=90) as response:
                     while block := response.read(1024 * 1024):
                         count += len(block)
                         if count > size:
