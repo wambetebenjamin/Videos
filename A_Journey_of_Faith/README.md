@@ -11,3 +11,7 @@ Alternatively, download `download_journey.py` and run `python download_journey.p
 Video SHA256: `e28d64890fc87a878dd94bcbd728976b0d23708515c96da4496032ee67b67b29`.
 
 See `Music_Credits.txt` for attribution.
+
+## Save directly to Google Drive
+
+Open `Save_to_Google_Drive.ipynb` in Google Colab. Press the play button and connect the Google account where you want the video saved. It downloads, combines, verifies, and saves the video in My Drive inside the Abbas Table folder. Allow about 1 GB of free Drive space. Keep the notebook open until it finishes.
