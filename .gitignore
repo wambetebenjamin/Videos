@@ -1,1 +1,11 @@
 34826-403777550_medium.mp4
+
+# tool binaries + renders (reproducible: tools/setup-ffmpeg.sh, projects/demo-reel/build.sh)
+.tools/
+out/*/cut-*.mp4
+out/*/fit-*.mp4
+out/*/picture.mp4
+out/*/voiced.mp4
+out/*/mixed.mp4
+__pycache__/
+*.pyc
